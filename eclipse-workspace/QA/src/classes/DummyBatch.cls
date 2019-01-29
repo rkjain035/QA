@@ -14,6 +14,7 @@ global class DummyBatch implements Database.Batchable<sObject>,Database.Stateful
         }
         
         String query = 'select userOrGroupId, ContactId from ContactShare where ContactId in : parentToChildMap.keySet()';
+		system.debug('Adding an debug statement...');
         return Database.getQueryLocator(query);
     }
     
