@@ -1,5 +1,5 @@
 public class AsyncUpdateUser implements Queueable {
-   
+   /*Added*/
     public list<user> lstUsersUpdated = new list<user>();
     public AsyncUpdateUser(list<user> userlist){
        lstUsersUpdated.addAll(userlist); 
