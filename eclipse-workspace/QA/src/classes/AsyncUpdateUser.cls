@@ -4,6 +4,7 @@ public class AsyncUpdateUser implements Queueable {
     public AsyncUpdateUser(list<user> userlist){
        lstUsersUpdated.addAll(userlist); 
        system.debug('User list in constructor = '+lstUsersUpdated );
+	   system.debug('ffff...');
     }
 
     public void execute(QueueableContext context) {
